@@ -10,6 +10,34 @@ function MatchForm() {
   const [matchDetails, setMatchDetails] = useState([]);
 
   function handleAdd() {
+    if (
+      firstName.trim() === "" &&
+      lastName.trim() === "" &&
+      country === "" &&
+      score === ""
+    ) {
+      alert("Please Enter all the details");
+      return;
+    }
+    if (firstName.trim() === "") {
+      alert("Please enter first name");
+      return;
+    }
+
+    if (lastName.trim() === "") {
+      alert("Please enter last name");
+      return;
+    }
+
+    if (country === "") {
+      alert("Please select country");
+      return;
+    }
+
+    if (score === "") {
+      alert("Please enter score");
+      return;
+    }
     const newMatchDetail = {
       firstName: firstName,
       lastName: lastName,
@@ -40,7 +68,6 @@ function MatchForm() {
           onChange={(e) => {
             setfirstName(e.target.value);
           }}
-          required
         />
         <input
           type="text"
@@ -51,7 +78,6 @@ function MatchForm() {
           onChange={(e) => {
             setLastName(e.target.value);
           }}
-          required
         />
         <select
           name="country"
@@ -77,7 +103,6 @@ function MatchForm() {
           onChange={(e) => {
             setScore(e.target.value);
           }}
-          required
         />
         <button type="button" onClick={handleAdd}>
           Add
