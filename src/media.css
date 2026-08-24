@@ -1,0 +1,58 @@
+@media screen and (max-width: 800px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form input {
+    width: calc(100% - 50%);
+  }
+  form select {
+    width: calc(100% - 50%);
+  }
+}
+@media screen and (max-width: 500px) {
+  table tr th,
+  table tr td {
+    padding: 4px 16px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 12px;
+  }
+  .action {
+    gap: 4px;
+  }
+  .action i {
+    font-size: 12px;
+  }
+  .action button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 430px) {
+  table tr th,
+  table tr td {
+    padding: 4px 12px;
+    font-size: 9px;
+  }
+  .action i {
+    font-size: 9px;
+  }
+  .action button {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 366px) {
+  table tr th,
+  table tr td {
+    padding: 4px 9px;
+    font-size: 8px;
+  }
+  .action i {
+    font-size: 8px;
+  }
+  .action button {
+    font-size: 8px;
+  }
+}
