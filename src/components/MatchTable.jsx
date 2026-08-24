@@ -20,7 +20,6 @@ function MatchTable({ matchDetails, setMatchDetails }) {
 
     setMatchDetails(updatedDetail);
   }
-  console.log(matchDetails);
   return (
     <div>
       <table>
